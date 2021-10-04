@@ -70,4 +70,4 @@ def loginpage(request):
 
 def web13(request):
     logout(request)
-    return redirect('login')
+    return redirect ('login')

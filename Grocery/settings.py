@@ -82,8 +82,9 @@ DATABASES = {
         'NAME': 'ddv2rlht2lhr5a',
         'USER': 'cljplrmhiuchpb',
         'PASSWORD': '2ea9aa1231d044c9d4becd92fd7e1a8f79f4fe904e8aba8b05f2918149d31693',
-        'HOST': 'ec2-54-204-148-110.compute-1.amazonaws.com'
         'PORT': '5432',
+        'HOST': 'ec2-54-204-148-110.compute-1.amazonaws.com',
+        
     }
 }
 

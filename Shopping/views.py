@@ -6,7 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import CreateUserForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login ,logout
-from django.contrib.auth.decorators import login_form
+from django.contrib.auth.decorators import login_required
 
 def web1(request):
     return render (request, 'index.html')

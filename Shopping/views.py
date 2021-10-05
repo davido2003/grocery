@@ -6,15 +6,13 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import CreateUserForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login ,logout
-from django.contrib.auth.decorators import login_required
+
 
 def web1(request):
     return render (request, 'index.html')
 def web2(request):
     Holds = Household.objects.all()
     return render (request, 'product2.html', {'Holds': Holds})
-@login_required(login_url='login')
-@login_required(login_url='signup')
 def web3(request):
     return render (request, 'single2.html')
 @login_required(login_url='login')

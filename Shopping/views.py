@@ -14,7 +14,7 @@ def web2(request):
     Holds = Household.objects.all()
     return render (request, 'product2.html', {'Holds': Holds})
 @login_required(login_url='login')
-@login_required(signup_url='signup'
+@login_required(signup_url='signup')
 def web3(request):
     return render (request, 'single2.html')
 @login_required(login_url='login')

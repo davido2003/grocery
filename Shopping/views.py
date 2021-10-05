@@ -35,8 +35,10 @@ def web8(request):
 @login_required(login_url='login')
 def web9(request):
     return render(request, 'terms.html')
+@login_required(login_url='login')
 def web10(request):
     return render(request, 'contact.html')
+@login_required(login_url='login')
 def web11(request):
    
         form = CreateUserForm()
